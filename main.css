@@ -8,7 +8,10 @@
 :root {
     font-size: 10px;
 }
-
+@font-face {
+    font-family: billabong;
+    src: url(filesforweb/Billabong.ttf);
+  }
 *,
 *::before,
 *::after {
@@ -19,10 +22,23 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
     min-height: 100vh;
     background-color: #fafafa;
-    color: #262626;
+   
     padding-bottom: 3rem;
+    text-align: center;
+    color:#003569;
 }
-p, h1, h2, a, img, body, a href {text-align:center}
+.wrap {
+    padding:0 150px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fas {text-align: left;
+    font-size: 40px;
+}
+.aboutme 
+{color:#003569;
+}
+
 img {
     display: block;
 }
@@ -95,6 +111,7 @@ img {
     display: inline-block;
     font-size: 3.2rem;
     font-weight: 300;
+    font-family: billabong;
 }
 
 .profile-edit-btn {
@@ -598,6 +615,9 @@ img {
 
     .profile::after {
         display: none;
+    }
+    .profile-image {
+        transition: .3s ease;
     }
 
     .profile-image,
